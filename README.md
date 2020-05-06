@@ -6,20 +6,44 @@ Submarine zine game made for https://itch.io/jam/flyover-zine-jam
 - these rules
 - paper (graph paper is recommended)
 - writing utensil (pencil is recommended)
+- at least 1 opponent (this game supports any number of additional players)
 
 ## Gameplay
 
 ### Start of the Game
 
-- map size is determined by # of players
-  - each player adds 4 to the width and height of the map
-    - 2 players: 8 x 8
-    - 3 players: 12 x 12
-    - 4 players: 16 x 16
-    - etc
-  - draw the game map
-- each player begins by selecting a position on the map
-- record your starting position on the grid
+Create the game map, the size of which is determined by number of players. The game is played on a grid. Label the horizontal axis with letters, and the vertical axis with numbers.
+
+Each player adds 4 to the width and height of the grid:
+- 2 players: 8 x 8
+- 3 players: 12 x 12
+- 4 players: 16 x 16
+- etc
+
+Select a starting position on the map, mark it but do not reveal it to your opponent/s. Once all players have secretely noted their starting positions, play can begin.
+
+```
+This player has decided to start in space C4, and is using an "s" to track the location of their submarine. There are only 2 players in this example, so the grid is 8x8.
+
+  +---+---+---+---+---+---+---+---+
+8 |   |   |   |   |   |   |   |   |
+  +---+---+---+---+---+---+---+---+
+7 |   |   |   |   |   |   |   |   |
+  +---+---+---+---+---+---+---+---+
+6 |   |   |   |   |   |   |   |   |
+  +---+---+---+---+---+---+---+---+
+5 |   |   |   |   |   |   |   |   |
+  +---+---+---+---+---+---+---+---+
+4 |   |   | s |   |   |   |   |   |
+  +---+---+---+---+---+---+---+---+
+3 |   |   |   |   |   |   |   |   |
+  +---+---+---+---+---+---+---+---+
+2 |   |   |   |   |   |   |   |   |
+  +---+---+---+---+---+---+---+---+
+1 |   |   |   |   |   |   |   |   |
+  +---+---+---+---+---+---+---+---+
+    A   B   C   D   E   F   G   H
+```
 
 ### Playing the Game
 
