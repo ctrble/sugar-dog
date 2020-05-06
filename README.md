@@ -23,7 +23,8 @@ Each player adds 4 to the width and height of the grid:
 Select a starting position on the map, mark it but do not reveal it to your opponent/s. Once all players have secretely noted their starting positions, play can begin.
 
 ```
-This player has decided to start in space C4, and is using an "s" to track the location of their submarine. There are only 2 players in this example, so the grid is 8x8.
+This player has decided to start in space C4, and is using an "s" to track the location
+of their submarine. There are only 2 players in this example, so the grid is 8x8.
 
   +---+---+---+---+---+---+---+---+
 8 |   |   |   |   |   |   |   |   |
@@ -50,7 +51,9 @@ This player has decided to start in space C4, and is using an "s" to track the l
 Each player takes turns giving commands and determining results. Note your commands in the command log and mark your position (and any active torpedos or mines) on your map each turn. It's advisable to track any contacts on the map, too.
 
 ```
-This player now occupies space F4, and is using a "t" to track their active torpedo and an "m" to track the location of a mine they placed. The player previously identified a contact in F8, which they marked with "c".
+This player now occupies space F4, and is using a "t" to track their active torpedo
+and an "m" to track the location of a mine they placed. The player previously
+identified a contact in F8, which they marked with "c".
 
   +---+---+---+---+---+---+---+---+
 8 |   |   |   |   |   | c |   |   |
