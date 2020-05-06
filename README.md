@@ -47,8 +47,38 @@ This player has decided to start in space C4, and is using an "s" to track the l
 
 ### Playing the Game
 
-- each player takes turns giving commands and determining results
-- record actions and contacts in the command log as needed
+Each player takes turns giving commands and determining results. Note your commands in the command log and mark your position (and any active torpedos or mines) on your map each turn. It's advisable to track any contacts on the map, too.
+
+```
+This player now occupies space F4, and is using a "t" to track their active torpedo and an "m" to track the location of a mine they placed. The player previously identified a contact in F8, which they marked with "c".
+
+  +---+---+---+---+---+---+---+---+
+8 |   |   |   |   |   | c |   |   |
+  +---+---+---+---+---+---+---+---+
+7 |   |   |   |   |   |   |   |   |
+  +---+---+---+---+---+---+---+---+
+6 |   |   |   |   |   | t |   |   |
+  +---+---+---+---+---+---+---+---+
+5 |   |   |   |   |   |   |   |   |
+  +---+---+---+---+---+---+---+---+
+4 |   |   |   | m |   | s |   |   |
+  +---+---+---+---+---+---+---+---+
+3 |   |   |   |   |   |   |   |   |
+  +---+---+---+---+---+---+---+---+
+2 |   |   |   |   |   |   |   |   |
+  +---+---+---+---+---+---+---+---+
+1 |   |   |   |   |   |   |   |   |
+  +---+---+---+---+---+---+---+---+
+    A   B   C   D   E   F   G   H
+
+    COMMAND LOG
+    –––––––––––
+1.  move to D4
+2.  place mine in D4
+3.  move to E4 (noted contact in F8)
+4.  move to F4
+5.  fire torpedo (moves to F5, then F6)
+```
 
 ### How to Win
 
