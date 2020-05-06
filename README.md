@@ -1,4 +1,5 @@
 # Sugar Dog
+
 Submarine zine game made for https://itch.io/jam/flyover-zine-jam
 
 ## Gather
@@ -77,7 +78,7 @@ identified a contact in F8, which they marked with "c".
     COMMAND LOG
     –––––––––––
 1.  move to D4
-2.  place mine in D4
+2.  place mine in D4 (1 remaining)
 3.  move to E4 (noted contact in F8)
 4.  move to F4
 5.  fire torpedo (moves to F5, then F6)
@@ -91,77 +92,35 @@ The last surviving submarine wins the game! If no submarines survive then the ga
 
 ### Command Log
 
-- the captain of each submarine is responsible for keeping accurate records of each turn
-- they must track their own position, commands given, and active mine and torpedo positions
-- they are advised to track all contacts each turn
+As the captain of a submarine it is your duty to keep accurate records of your commands each turn.
 
-### Submarines
+### Submarine
 
-- equipped with sonar, torpedos, and 2 mines
-- if a submarine enters the same space as another contact, both are destroyed
+Your submarine has powerful engines with stealth capabilities, and is equipped with sonar, torpedos, and mines.
 
-### Torpedos
+#### Engines
 
-- each turn, move 2 spaces in a straight line
+##### ACTION: Silent Running
+
+- move 1 space
+- do not announce position
+- do respond to active sonars
+
+##### ACTION: Cruise
+
+- move 2 spaces
 - announce first space, then second space
 - do respond to active sonars
-- if a torpedo enters the same space as a submarine or another contact
-  - announce an impact
-  - everything in that space is destroyed
+- if entering the same space as another contact then both are destroyed
 
-### Mines
-
-- each submarine starts the game with 2 mines
-- place a mine at a position
-- do respond to active sonars
-- if another contact moves into the space a mine is in
-  - announce an impact
-  - everything in that space is destroyed
-
-### Sonar
+#### Sonar
 
 - passive sonar detects loud contacts, such as fast moving submarines and torpedos
 - active sonar detects all submarines, mines, and torpedos
   - except submarines in stealth mode
   - if you used the active sonar, you are revealed (even if previously in stealth mode)
 
-### Actions
-
-#### Stealth Mode
-
-- do nothing
-- undetectable, do not respond to other active sonars, but do announce your own position if you use active sonar
-
-#### Silent Running
-
-- move 1 space
-- do not announce position
-- do respond to active sonars
-
-#### Cruise
-
-- move 2 spaces
-- announce first space, then second space
-- do respond to active sonars
-
-#### Fire Torpedos
-
-- announce torpedo position
-- torpedos move at 2 spaces per turn
-- announce first space, then second space
-- do respond to active sonars
-
-#### Place Mine (if available)
-
-- remove 1 mine from inventory
-- do not announce position
-- mines do not move
-- if another contact moves into the space a mine is in
-    - announce an impact
-    - everything in that space is destroyed
-- do respond to active sonars
-
-#### Active Sonar
+##### ACTION: Active Sonar
 
 - announce position/s
     - include yourself and any active torpedoes
@@ -171,11 +130,42 @@ The last surviving submarine wins the game! If no submarines survive then the ga
     - when responding, announce yourself and your active mines and torpedos
     - list the positions closest to the sonar source first
 
+#### Torpedos
+
+- each turn, move 2 spaces in a straight line
+- announce first space, then second space
+- do respond to active sonars
+- if a torpedo enters the same space as a submarine or another contact
+  - announce an impact
+  - everything in that space is destroyed
+
+##### ACTION: Fire Torpedos
+
+- announce torpedo position
+- torpedos move at 2 spaces per turn
+- announce first space, then second space
+- do respond to active sonars
+
+#### Mines
+
+- each submarine starts the game with 2 mines
+- place a mine at a position
+- do respond to active sonars
+- if another contact moves into the space a mine is in
+  - announce an impact
+  - everything in that space is destroyed
+
+##### ACTION: Place Mine (if available)
+
+- remove 1 mine from inventory
+- do not announce position
+- mines do not move
+- if another contact moves into the space a mine is in
+    - announce an impact
+    - everything in that space is destroyed
+- do respond to active sonars
+
 ## FAQ
 
 - can a submarine occupy the same space of another submarine or mine?
   - yes, if the submarine is silent running or in stealth mode, meaning it's moving carefully and potentially at a different depth, thus avoiding collisions with nearby objects
-
-## Notes
-
-- perhaps can remove stealth mode, easily abused, not accurate. instead, when using silent running the player may move up to 1 space
