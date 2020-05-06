@@ -48,7 +48,7 @@ of their submarine. There are only 2 players in this example, so the grid is 8x8
 
 ### Playing the Game
 
-Each player takes turns giving commands and determining results. Note your commands in the command log and mark your position (and any active torpedos or mines) on your map each turn. It's advisable to track any contacts on the map, too.
+Each player takes turns giving commands and determining results. Note your commands in the command log and mark your position (and any active torpedos or mines) on your map each turn. It's advisable to track any contacts on the map, too. Refer to the Submarine Captain's Guide for more operational instructions.
 
 ```
 This player now occupies space F4, and is using a "t" to track their active torpedo
@@ -85,8 +85,7 @@ identified a contact in F8, which they marked with "c".
 
 ### How to Win
 
-- the last surviving submarine wins
-- if no submarines survive then the game ends in a draw
+The last surviving submarine wins the game! If no submarines survive then the game ends in a draw.
 
 ## Submarine Captain's Guide
 
