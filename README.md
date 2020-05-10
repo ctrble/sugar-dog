@@ -111,8 +111,10 @@ Your submarine is capable of high speeds, but the engines can generate significa
   1. Announce a contact in the space
   2. Pause for contacts
       - If there is another contact in the same space, both contacts are destroyed
-      - If there are no contacts, either move into the second space and check the protocal, or announce there are no further contacts
-- If another contact is in the same space, a collision occurs and everything in that space is destroyed
+      - If there are no contacts, either move into the second space and recheck for contacts, or announce that there are no further contacts
+- If your submarine enters the same space as another contact:
+  1. Announce an impact
+  2. Everything in that space is destroyed
 
 #### Sonar
 
@@ -128,18 +130,18 @@ Your submarine has two kinds of sonars available: passive and active. Passive so
 
 #### Torpedos
 
-Torpedos are deadly missiles that destroy anything they impact with.
+Torpedos are deadly missiles that destroy anything they impact with. While your submarine is armed with as many torpedos as you might possibly need, a wise Captain will not fire them recklessly.
 
 ##### ACTION: Fire Torpedos
 
-- Each turn, torpedos move 2 spaces in a straight line
+- Each turn, torpedos move 2 spaces in a straight line, never changing direction
 - Once torpedos move off the map, they are lost to the void
 - As each space is entered, follow the same protocal:
   1. Announce a contact in the space
   2. Pause for contacts
       - If there is another contact in the same space, both contacts are destroyed
-      - If there are no contacts, either move into the second space and check the protocal, or announce there are no further contacts
-- If a torpedo enters the same space as anything else:
+      - If there are no contacts, either move into the second space and recheck for contacts, or announce that there are no further contacts
+- If a torpedo enters the same space as another contact:
   1. Announce an impact
   2. Everything in that space is destroyed
 
@@ -150,7 +152,7 @@ Mines are dangerous bombs that detonate when something strays into them. Each su
 ##### ACTION: Place Mine (if available)
 
 - Place the mine at your current position (if you have mines available)
-- Remove the mine from your inventory when it's placed
+- Remove the mine from your inventory when it's deployed
 - If another contact moves into the space a mine is in:
   1. Announce an impact
   2. Everything in that space is destroyed
