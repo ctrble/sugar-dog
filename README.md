@@ -109,7 +109,7 @@ Your submarine is capable of high speeds, but the engines can generate significa
 ##### ACTION: Cruise
 
 - Move 2 spaces (though you cannot move diagonally, you can move to the side and then over):
-- As each space is entered, follow the same protocal:
+- As each space is entered, follow the same protocol:
   1. Announce a contact in the space
   2. Pause for contacts
       - If there is another contact in the same space, both contacts are destroyed
@@ -138,7 +138,7 @@ torpedoes` are deadly missiles that destroy anything they impact with. While you
 
 - Each turn, torpedoes` move 2 spaces in a straight line, never changing direction
 - Once torpedoes` move off the map, they are lost to the void
-- As each space is entered, follow the same protocal:
+- As each space is entered, follow the same protocol:
   1. Announce a contact in the space
   2. Pause for contacts
       - If there is another contact in the same space, both contacts are destroyed
