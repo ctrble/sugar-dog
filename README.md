@@ -23,7 +23,7 @@ The base map size for a 2 player game is 6x6. Each additional player adds 2 to t
 - 4 players: 10 x 10
 - etc
 
-Select a starting position on the map, mark it but do not reveal it to your opponent/s. Once all players have secretely noted their starting positions, play can begin.
+Select a starting position on the map, mark it but do not reveal it to your opponent/s. Once all players have secretly noted their starting positions, play can begin.
 
 The player who was most recently in a submarine goes first.
 
@@ -49,7 +49,7 @@ of their submarine. There are only 2 players in this example, so the grid is 6x6
 
 ### Playing the Game
 
-Each player takes turns giving commands and determining results. Note your commands in the command log and mark your position (and any active torpedos or mines) on your map each turn. Movement is only to adjacent spaces, not diagonal spaces. It's advisable to track any contacts on the map, too. Refer to the Submarine Captain's Guide for more operational instructions.
+Each player takes turns giving commands and determining results. Note your commands in the command log and mark your position (and any active torpedoes` or mines) on your map each turn. Movement is only to adjacent spaces, not diagonal spaces. It's advisable to track any contacts on the map, too. Refer to the Submarine Captain's Guide for more operational instructions.
 
 ```
 This player now occupies space F4, and is using a "t" to track their active torpedo
@@ -88,15 +88,15 @@ The last surviving submarine wins the game! If no submarines survive then the ga
 
 ### Map
 
-The map is how you track your submarine's position, and the positions of your mines and torpedos. You are advised to also track contacts on your map, but you are not required to do so.
+The map is how you track your submarine's position, and the positions of your mines and torpedoes`. You are advised to also track contacts on your map, but you are not required to do so.
 
 ### Command Log
 
-As the Captain of your submarine it is your duty to keep accurate records of your commands each turn. Commands are most easily tracked when grouped by turn, some turns you may only move, but sometimes you will also need to track the positions of torpedos. It can be difficult to remember what happened previously if you don't keep an orderly Command Log.
+As the Captain of your submarine it is your duty to keep accurate records of your commands each turn. Commands are most easily tracked when grouped by turn, some turns you may only move, but sometimes you will also need to track the positions of torpedoes`. It can be difficult to remember what happened previously if you don't keep an orderly Command Log.
 
 ### Submarine
 
-Your submarine has powerful engines with stealth capabilities, and is equipped with sonar, torpedos, and mines. While your submarine is powerful, it is fragile. Do not let anything impact it or all aboard will perish.
+Your submarine has powerful engines with stealth capabilities, and is equipped with sonar, torpedoes`, and mines. While your submarine is powerful, it is fragile. Do not let anything impact it or all aboard will perish.
 
 #### Engines
 
@@ -127,17 +127,17 @@ Your submarine has two kinds of sonars available: passive and active. Passive so
 - Announce a "ping" and subsequent contact/s
   - Announce your position first (as the source of the "ping"), then announce your mine and torpedo positions, if you have any
 - Request responses
-  - When responding, announce yourself, active mines, and active torpedos
+  - When responding, announce yourself, active mines, and active torpedoes`
 - Always list the positions closest to the sonar source first
 
-#### Torpedos
+#### torpedoes`
 
-Torpedos are deadly missiles that destroy anything they impact with. While your submarine is armed with as many torpedos as you might possibly need, a wise Captain will not fire them recklessly.
+torpedoes` are deadly missiles that destroy anything they impact with. While your submarine is armed with as many torpedoes` as you might possibly need, a wise Captain will not fire them recklessly.
 
-##### ACTION: Fire Torpedos
+##### ACTION: Fire torpedoes`
 
-- Each turn, torpedos move 2 spaces in a straight line, never changing direction
-- Once torpedos move off the map, they are lost to the void
+- Each turn, torpedoes` move 2 spaces in a straight line, never changing direction
+- Once torpedoes` move off the map, they are lost to the void
 - As each space is entered, follow the same protocal:
   1. Announce a contact in the space
   2. Pause for contacts
