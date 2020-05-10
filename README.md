@@ -49,8 +49,6 @@ of their submarine. There are only 2 players in this example, so the grid is 6x6
 
 ### Playing the Game
 
-`A/<lead=B>B`
-
 Each player takes turns giving commands and determining results. Note your commands in the command log and mark your position (and any active torpedoes` or mines) on your map each turn. Movement is only to adjacent spaces, not diagonal spaces. It's advisable to track any contacts on the map, too. Refer to the Submarine Captain's Guide for more operational instructions.
 
 ```
