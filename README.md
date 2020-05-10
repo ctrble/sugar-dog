@@ -47,7 +47,7 @@ of their submarine. There are only 2 players in this example, so the grid is 6x6
 
 ### Playing the Game
 
-Each player takes turns giving commands and determining results. Note your commands in the command log and mark your position (and any active torpedos or mines) on your map each turn. It's advisable to track any contacts on the map, too. Refer to the Submarine Captain's Guide for more operational instructions.
+Each player takes turns giving commands and determining results. Note your commands in the command log and mark your position (and any active torpedos or mines) on your map each turn. Movement is only to adjacent spaces, not diagonal spaces. It's advisable to track any contacts on the map, too. Refer to the Submarine Captain's Guide for more operational instructions.
 
 ```
 This player now occupies space F4, and is using a "t" to track their active torpedo
@@ -84,25 +84,27 @@ The last surviving submarine wins the game! If no submarines survive then the ga
 
 ## Submarine Captain's Guide
 
+### Map
+
+The map is how you track your submarine's position, and the positions of your mines and torpedos. You are advised to also track contacts on your map, but you are not required to do so.
+
 ### Command Log
 
-As the captain of a submarine it is your duty to keep accurate records of your commands each turn.
+As the Captain of your submarine it is your duty to keep accurate records of your commands each turn. Commands are most easily tracked when grouped by turn, some turns you may only move, but sometimes you will also need to track the positions of torpedos. It can be difficult to remember what happened previously if you don't keep an orderly Command Log.
 
 ### Submarine
 
-Your submarine has powerful engines with stealth capabilities, and is equipped with sonar, torpedos, and mines.
+Your submarine has powerful engines with stealth capabilities, and is equipped with sonar, torpedos, and mines. While your submarine is powerful, it is fragile. Do not let anything impact it or all aboard will perish.
 
 #### Engines
 
-When moving, only move to an adjacent space, do not move diagonally.
+Your submarine is capable of high speeds, but the engines can generate significant noise and reveal your position, unless you suppress all unnecessary noise by moving slowly and purposefully.
 
 ##### ACTION: Silent Running
 
-- Move 1 space (silently, do not announce contacts)
+- Either maintain your position or move 1 space (silently, do not announce contacts)
 
 ##### ACTION: Cruise
-
-Your submarine is capable of high speeds, but the engines generate significant noise and reveal your position.
 
 - Move 2 spaces (though you cannot move diagonally, you can move to the side and then over):
 - As each space is entered, follow the same protocal:
@@ -126,7 +128,7 @@ Your submarine has two kinds of sonars available: passive and active. Passive so
 
 #### Torpedos
 
-Torpedos are deadly missiles that destroy anything they impacts with.
+Torpedos are deadly missiles that destroy anything they impact with.
 
 ##### ACTION: Fire Torpedos
 
