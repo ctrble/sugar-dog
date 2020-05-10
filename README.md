@@ -2,6 +2,8 @@
 
 Submarine zine game made for https://itch.io/jam/flyover-zine-jam
 
+Recommended listening: https://youtu.be/oDJsXIBxpQw
+
 ## Gather
 
 - these rules
