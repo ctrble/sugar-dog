@@ -15,36 +15,34 @@ Submarine zine game made for https://itch.io/jam/flyover-zine-jam
 
 Create the game map, the size of which is determined by number of players. The game is played on a grid. Label the horizontal axis with letters, and the vertical axis with numbers.
 
-Each player adds 4 to the width and height of the grid:
-- 2 players: 8 x 8
-- 3 players: 12 x 12
-- 4 players: 16 x 16
+The base map size for a 2 player game is 6x6. Each additional player adds 2 to the width and height of the grid:
+- 2 players: 6 x 6
+- 3 players: 8 x 8
+- 4 players: 10 x 10
 - etc
 
 Select a starting position on the map, mark it but do not reveal it to your opponent/s. Once all players have secretely noted their starting positions, play can begin.
 
+The player who was most recently in a submarine goes first.
+
 ```
 This player has decided to start in space C4, and is using an "s" to track the location
-of their submarine. There are only 2 players in this example, so the grid is 8x8.
+of their submarine. There are only 2 players in this example, so the grid is 6x6.
 
-  +---+---+---+---+---+---+---+---+
-8 |   |   |   |   |   |   |   |   |
-  +---+---+---+---+---+---+---+---+
-7 |   |   |   |   |   |   |   |   |
-  +---+---+---+---+---+---+---+---+
-6 |   |   |   |   |   |   |   |   |
-  +---+---+---+---+---+---+---+---+
-5 |   |   |   |   |   |   |   |   |
-  +---+---+---+---+---+---+---+---+
-4 |   |   | s |   |   |   |   |   |
-  +---+---+---+---+---+---+---+---+
-3 |   |   |   |   |   |   |   |   |
-  +---+---+---+---+---+---+---+---+
-2 |   |   |   |   |   |   |   |   |
-  +---+---+---+---+---+---+---+---+
-1 |   |   |   |   |   |   |   |   |
-  +---+---+---+---+---+---+---+---+
-    A   B   C   D   E   F   G   H
+  +---+---+---+---+---+---+
+6 |   |   |   |   |   |   |
+  +---+---+---+---+---+---+
+5 |   |   |   |   |   |   |
+  +---+---+---+---+---+---+
+4 |   |   | s |   |   |   |
+  +---+---+---+---+---+---+
+3 |   |   |   |   |   |   |
+  +---+---+---+---+---+---+
+2 |   |   |   |   |   |   |
+  +---+---+---+---+---+---+
+1 |   |   |   |   |   |   |
+  +---+---+---+---+---+---+
+    A   B   C   D   E   F
 ```
 
 ### Playing the Game
@@ -54,34 +52,30 @@ Each player takes turns giving commands and determining results. Note your comma
 ```
 This player now occupies space F4, and is using a "t" to track their active torpedo
 and an "m" to track the location of a mine they placed. The player previously
-identified a contact in F8, which they marked with "c".
+identified a contact in F1, which they marked with "c".
 
-  +---+---+---+---+---+---+---+---+
-8 |   |   |   |   |   | c |   |   |
-  +---+---+---+---+---+---+---+---+
-7 |   |   |   |   |   |   |   |   |
-  +---+---+---+---+---+---+---+---+
-6 |   |   |   |   |   | t |   |   |
-  +---+---+---+---+---+---+---+---+
-5 |   |   |   |   |   |   |   |   |
-  +---+---+---+---+---+---+---+---+
-4 |   |   |   | m |   | s |   |   |
-  +---+---+---+---+---+---+---+---+
-3 |   |   |   |   |   |   |   |   |
-  +---+---+---+---+---+---+---+---+
-2 |   |   |   |   |   |   |   |   |
-  +---+---+---+---+---+---+---+---+
-1 |   |   |   |   |   |   |   |   |
-  +---+---+---+---+---+---+---+---+
-    A   B   C   D   E   F   G   H
+  +---+---+---+---+---+---+
+6 |   |   |   |   |   |   |
+  +---+---+---+---+---+---+
+5 |   |   |   |   |   |   |
+  +---+---+---+---+---+---+
+4 |   |   |   | m |   | s |
+  +---+---+---+---+---+---+
+3 |   |   |   |   |   |   |
+  +---+---+---+---+---+---+
+2 |   |   |   |   |   | t |
+  +---+---+---+---+---+---+
+1 |   |   |   |   |   | c |
+  +---+---+---+---+---+---+
+    A   B   C   D   E   F
 
     COMMAND LOG
     –––––––––––
 1.  move to D4
-2.  place mine in D4 (1 remaining)
-3.  move to E4 (noted contact in F8)
+2.  place mine in D4 (2 remaining)
+3.  move to E4 (noted contact in F1)
 4.  move to F4
-5.  fire torpedo (moves to F5, then F6)
+5.  fire torpedo (moves to F3, then F2)
 ```
 
 ### How to Win
@@ -100,72 +94,66 @@ Your submarine has powerful engines with stealth capabilities, and is equipped w
 
 #### Engines
 
+When moving, only move to an adjacent space, do not move diagonally.
+
 ##### ACTION: Silent Running
 
-- move 1 space
-- do not announce position
-- do respond to active sonars
+- Move 1 space (silently, do not announce contacts)
 
 ##### ACTION: Cruise
 
-- move 2 spaces
-- announce first space, then second space
-- do respond to active sonars
-- if entering the same space as another contact then both are destroyed
+Your submarine is capable of high speeds, but the engines generate significant noise and reveal your position.
+
+- Move 2 spaces (though you cannot move diagonally, you can move to the side and then over):
+- As each space is entered, follow the same protocal:
+  1. Announce a contact in the space
+  2. Pause for contacts
+      - If there is another contact in the same space, both contacts are destroyed
+      - If there are no contacts, either move into the second space and check the protocal, or announce there are no further contacts
+- If another contact is in the same space, a collision occurs and everything in that space is destroyed
 
 #### Sonar
 
-- passive sonar detects loud contacts, such as fast moving submarines and torpedos
-- active sonar detects all submarines, mines, and torpedos
-  - except submarines in stealth mode
-  - if you used the active sonar, you are revealed (even if previously in stealth mode)
+Your submarine has two kinds of sonars available: passive and active. Passive sonars pick up sounds in the vicinity, while active sonar generates a loud "ping" that returns echoes, revealing objects even if they are stationary.
 
 ##### ACTION: Active Sonar
 
-- announce position/s
-    - include yourself and any active torpedoes
-    - announce yourself first, then announce mine and torpedo positions
-    - list the positions closest to the sonar source first
-- request responses
-    - when responding, announce yourself and your active mines and torpedos
-    - list the positions closest to the sonar source first
+- Announce a "ping" and subsequent contact/s
+  - Announce your position first (as the source of the "ping"), then announce your mine and torpedo positions, if you have any
+- Request responses
+  - When responding, announce yourself, active mines, and active torpedos
+- Always list the positions closest to the sonar source first
 
 #### Torpedos
 
-- each turn, move 2 spaces in a straight line
-- announce first space, then second space
-- do respond to active sonars
-- if a torpedo enters the same space as a submarine or another contact
-  - announce an impact
-  - everything in that space is destroyed
+Torpedos are deadly missiles that destroy anything they impacts with.
 
 ##### ACTION: Fire Torpedos
 
-- announce torpedo position
-- torpedos move at 2 spaces per turn
-- announce first space, then second space
-- do respond to active sonars
+- Each turn, torpedos move 2 spaces in a straight line
+- Once torpedos move off the map, they are lost to the void
+- As each space is entered, follow the same protocal:
+  1. Announce a contact in the space
+  2. Pause for contacts
+      - If there is another contact in the same space, both contacts are destroyed
+      - If there are no contacts, either move into the second space and check the protocal, or announce there are no further contacts
+- If a torpedo enters the same space as anything else:
+  1. Announce an impact
+  2. Everything in that space is destroyed
 
 #### Mines
 
-- each submarine starts the game with 2 mines
-- place a mine at a position
-- do respond to active sonars
-- if another contact moves into the space a mine is in
-  - announce an impact
-  - everything in that space is destroyed
+Mines are dangerous bombs that detonate when something strays into them. Each submarine carries a limited supply of 3 mines.
 
 ##### ACTION: Place Mine (if available)
 
-- remove 1 mine from inventory
-- do not announce position
-- mines do not move
-- if another contact moves into the space a mine is in
-    - announce an impact
-    - everything in that space is destroyed
-- do respond to active sonars
+- Place the mine at your current position (if you have mines available)
+- Remove the mine from your inventory when it's placed
+- If another contact moves into the space a mine is in:
+  1. Announce an impact
+  2. Everything in that space is destroyed
 
 ## FAQ
 
-- can a submarine occupy the same space of another submarine or mine?
-  - yes, if the submarine is silent running or in stealth mode, meaning it's moving carefully and potentially at a different depth, thus avoiding collisions with nearby objects
+Can a submarine occupy the same space of another submarine or mine?
+> Yes, if the submarine is silent running, meaning it's moving carefully and is potentially at a different depth, it avoids collisions with nearby objects.
