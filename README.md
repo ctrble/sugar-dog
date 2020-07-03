@@ -2,6 +2,8 @@
 
 Submarine zine game made for https://itch.io/jam/flyover-zine-jam
 
+Downloadable PDF here: https://espiongames.itch.io/sugar-dog
+
 Recommended listening: https://youtu.be/oDJsXIBxpQw
 
 ## Gather
